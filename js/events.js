@@ -3,9 +3,13 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img').on('load', function(event) {
+  $('img').on('load', function() {
     append(` class= "tasty"`)
   })
+}
+
+function pressIt() {
+  $('input')
 }
 
 $(document).ready(function(){
