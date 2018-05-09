@@ -3,7 +3,9 @@ function getIt() {
 }
 
 function frameIt() {
-  $('img')
+  $('img').on('load', function(event) {
+    append(` class= "tasty"`)
+  })
 }
 
 $(document).ready(function(){
